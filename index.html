@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- HEAD -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,9 +30,10 @@
       rel="stylesheet"
     />
   </head>
-
+  <!-- BODY -->
   <body>
     <div class="page">
+      <!-- HEADER -->
       <header class="header">
         <nav class="nav">
           <img
@@ -82,8 +84,9 @@
           </div>
         </div>
       </header>
-
+      <!-- MAIN -->
       <main class="content">
+        <!-- RECIPE SECTION -->
         <section class="recipes" id="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
@@ -126,14 +129,76 @@
             </li>
           </ul>
         </section>
+        <!-- RESERVATION SECTION -->
+        <section class="reservation" id="book_a_table">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label for="name-input" class="form__label">
+                Name *
+                <input
+                  type="text"
+                  class="form__input"
+                  name="name-input"
+                  placeholder="Name Surname"
+                  id="name-input"
+                  required
+                />
+              </label>
 
-        <section class="reservation" id="book_a_table"></section>
+              <label for="number-input" class="form__label">
+                Number of guests*
+                <input
+                  type="number"
+                  class="form__input"
+                  id="number-input"
+                  min="1"
+                  max="8"
+                  placeholder="1-8"
+                  required
+                />
+              </label>
 
+              <label for="datetime-local" class="form__label">
+                Date & time *
+                <input
+                  type="datetime-local"
+                  class="form__input"
+                  id="datetime-local"
+                  required
+                />
+              </label>
+
+              <label for="email" class="form__label">
+                Your email *
+                <input
+                  type="email"
+                  class="form__input"
+                  id="email"
+                  placeholder="email@email.com"
+                  required
+                />
+              </label>
+            </fieldset>
+            <button class="form__button" style="border: 4px solid #1878dc">
+              Book a table
+            </button>
+
+            <label for="checkbox" class="form__label form__label_type_checkbox">
+              <input type="checkbox" id="checkbox" class="form__checkbox" />
+              I agree with the retms of use
+            </label>
+          </form>
+        </section>
+        <!-- MENU SECTION -->
         <section class="menu" id="menu"></section>
-
+        <!-- ABOUT-->
         <section class="about" id="contacts"></section>
       </main>
+      <!-- FOOTER -->
       <footer class="footer"></footer>
     </div>
   </body>
 </html>
+
+<!-- remember: background, all elements are required, -->
