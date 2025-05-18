@@ -13,4 +13,7 @@ This is the second project of the Software Engineering program at TripleTen. It 
 
 ## Plan on improving the project
 
-Add your ideas here :)
+Adding an online ordering system
+Creating a loyalty program section
+Adding a coffee bean shop section
+Implementing a blog section for coffee brewing tips
